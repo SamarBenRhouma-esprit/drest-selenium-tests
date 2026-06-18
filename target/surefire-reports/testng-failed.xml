@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Drest Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Tests Drest.tn(failed)" verbose="0">
+    <classes>
+      <class name="Tests.ProductTest">
+        <methods>
+          <include name="testPageCategorieCharge"/>
+          <include name="testPrixProduitPresent"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testClicProduitEtTitre"/>
+          <include name="testProduitsPresents"/>
+        </methods>
+      </class> <!-- Tests.ProductTest -->
+      <class name="Tests.E2ETest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testParcourConnexionInvalide"/>
+          <include name="testParcourAchatComplet"/>
+          <include name="testParcourNavigationRecherche"/>
+        </methods>
+      </class> <!-- Tests.E2ETest -->
+      <class name="Tests.LoginTest">
+        <methods>
+          <include name="testConnexionIdentifiantsValides"/>
+          <include name="testConnexionIdentifiantsInvalides"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testConnexionMotDePasseVide"/>
+          <include name="testPageLoginCharge"/>
+        </methods>
+      </class> <!-- Tests.LoginTest -->
+      <class name="Tests.CartTest">
+        <methods>
+          <include name="testPagePanierCharge"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testPanierNonVideApresAjout"/>
+          <include name="testAjoutAuPanier"/>
+        </methods>
+      </class> <!-- Tests.CartTest -->
+      <class name="Tests.NavigationTest">
+        <methods>
+          <include name="testNavigationHomme"/>
+          <include name="testNavigationFemme"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testNavigationSport"/>
+          <include name="testNavigationEnfants"/>
+        </methods>
+      </class> <!-- Tests.NavigationTest -->
+    </classes>
+  </test> <!-- Tests Drest.tn(failed) -->
+</suite> <!-- Failed suite [Drest Test Suite] -->

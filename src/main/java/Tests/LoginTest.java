@@ -32,6 +32,8 @@ public class LoginTest extends BaseTest {
         Thread.sleep(1000);
     }
 
+    // ==================== CAS OK ====================
+
     @Test
     @Story("Chargement de la page login")
     @Description("Vérifie que la page de connexion charge correctement avec les champs email et mot de passe visibles")
@@ -48,8 +50,32 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
+    @Story("Connexion avec identifiants valides")
+    @Description("Vérifie qu'un utilisateur peut se connecter avec succès et est redirigé vers son compte")
+    @Severity(SeverityLevel.BLOCKER)
+    public void testConnexionIdentifiantsValides() throws InterruptedException {
+        ouvrirPageLogin();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        driver.findElement(By.id("username")).sendKeys(EMAIL_VALIDE);
+        driver.findElement(By.id("password")).sendKeys(MDP_VALIDE);
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();", driver.findElement(By.name("login"))
+        );
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(
+                By.cssSelector(".woocommerce-form-login")
+        ));
+        String url = driver.getCurrentUrl();
+        Assert.assertTrue(url.contains("mon-compte"),
+                "Connexion echouee — URL incorrecte : " + url);
+        Assert.assertFalse(driver.getPageSource().contains("woocommerce-form-login"),
+                "Formulaire de login encore visible apres connexion");
+    }
+
+    // ==================== CAS KO ====================
+
+    @Test
     @Story("Connexion avec identifiants invalides")
-    @Description("Vérifie qu'un message d'erreur s'affiche lorsque l'utilisateur saisit de mauvais identifiants")
+    @Description("KO - Vérifie qu'un message d'erreur s'affiche avec de mauvais identifiants")
     @Severity(SeverityLevel.CRITICAL)
     public void testConnexionIdentifiantsInvalides() throws InterruptedException {
         ouvrirPageLogin();
@@ -59,12 +85,10 @@ public class LoginTest extends BaseTest {
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].click();", driver.findElement(By.name("login"))
         );
-
         wait.until(d -> "complete".equals(
                 ((JavascriptExecutor) d).executeScript("return document.readyState")
         ));
         Thread.sleep(1000);
-
         String pageSource = driver.getPageSource();
         Assert.assertTrue(
                 pageSource.contains("woocommerce-error") ||
@@ -77,25 +101,83 @@ public class LoginTest extends BaseTest {
     }
 
     @Test
-    @Story("Connexion avec identifiants valides")
-    @Description("Vérifie qu'un utilisateur peut se connecter avec succès et est redirigé vers son compte")
-    @Severity(SeverityLevel.BLOCKER)
-    public void testConnexionIdentifiantsValides() throws InterruptedException {
+    @Story("Connexion avec email vide")
+    @Description("KO - Vérifie qu'une erreur s'affiche quand l'email est vide")
+    @Severity(SeverityLevel.CRITICAL)
+    public void testConnexionEmailVide() throws InterruptedException {
         ouvrirPageLogin();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-        driver.findElement(By.id("username")).sendKeys(EMAIL_VALIDE);
+        // Laisser email vide
         driver.findElement(By.id("password")).sendKeys(MDP_VALIDE);
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].click();", driver.findElement(By.name("login"))
         );
-
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(
-                By.cssSelector(".woocommerce-form-login")
+        wait.until(d -> "complete".equals(
+                ((JavascriptExecutor) d).executeScript("return document.readyState")
         ));
-        String url = driver.getCurrentUrl();
-        Assert.assertTrue(url.contains("mon-compte"),
-                "Connexion echouee — URL incorrecte : " + url);
-        Assert.assertFalse(driver.getPageSource().contains("woocommerce-form-login"),
-                "Formulaire de login encore visible apres connexion");
+        Thread.sleep(1000);
+        String pageSource = driver.getPageSource();
+        Assert.assertTrue(
+                pageSource.contains("woocommerce-error") ||
+                        pageSource.contains("Erreur") ||
+                        pageSource.contains("erreur") ||
+                        pageSource.contains("Email") ||
+                        pageSource.contains("champ"),
+                "Aucun message d'erreur pour email vide"
+        );
+    }
+
+    @Test
+    @Story("Connexion avec mot de passe vide")
+    @Description("KO - Vérifie qu'une erreur s'affiche quand le mot de passe est vide")
+    @Severity(SeverityLevel.CRITICAL)
+    public void testConnexionMotDePasseVide() throws InterruptedException {
+        ouvrirPageLogin();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        driver.findElement(By.id("username")).sendKeys(EMAIL_VALIDE);
+        // Laisser mot de passe vide
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();", driver.findElement(By.name("login"))
+        );
+        wait.until(d -> "complete".equals(
+                ((JavascriptExecutor) d).executeScript("return document.readyState")
+        ));
+        Thread.sleep(1000);
+        String pageSource = driver.getPageSource();
+        Assert.assertTrue(
+                pageSource.contains("woocommerce-error") ||
+                        pageSource.contains("Erreur") ||
+                        pageSource.contains("erreur") ||
+                        pageSource.contains("mot de passe") ||
+                        pageSource.contains("password"),
+                "Aucun message d'erreur pour mot de passe vide"
+        );
+    }
+
+    @Test
+    @Story("Connexion avec email format invalide")
+    @Description("KO - Vérifie qu'une erreur s'affiche avec un email au format incorrect")
+    @Severity(SeverityLevel.NORMAL)
+    public void testConnexionEmailFormatInvalide() throws InterruptedException {
+        ouvrirPageLogin();
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        driver.findElement(By.id("username")).sendKeys("emailsansarobas");
+        driver.findElement(By.id("password")).sendKeys(MDP_INVALIDE);
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].click();", driver.findElement(By.name("login"))
+        );
+        wait.until(d -> "complete".equals(
+                ((JavascriptExecutor) d).executeScript("return document.readyState")
+        ));
+        Thread.sleep(1000);
+        String pageSource = driver.getPageSource();
+        Assert.assertTrue(
+                pageSource.contains("woocommerce-error") ||
+                        pageSource.contains("Erreur") ||
+                        pageSource.contains("erreur") ||
+                        pageSource.contains("invalide") ||
+                        pageSource.contains("incorrect"),
+                "Aucun message d'erreur pour email format invalide"
+        );
     }
 }

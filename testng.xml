@@ -10,6 +10,8 @@
             <class name="Tests.ProductTest"/>
             <class name="Tests.CartTest"/>
             <class name="Tests.LoginTest"/>
+            <class name="Tests.E2ETest"/>
+
         </classes>
     </test>
 

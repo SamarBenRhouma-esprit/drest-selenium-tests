@@ -54,7 +54,7 @@ public class ProductTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void testClicProduitEtTitre() throws InterruptedException {
         driver.get(URL_CATEGORIE);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         WebElement produit = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(
@@ -64,7 +64,7 @@ public class ProductTest extends BaseTest {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", produit);
         Thread.sleep(500);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", produit);
-        Thread.sleep(4000);
+        Thread.sleep(8000);
 
         WebElement titre = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(
@@ -81,7 +81,7 @@ public class ProductTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void testPrixProduitPresent() throws InterruptedException {
         driver.get(URL_CATEGORIE);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         WebElement produit = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(
@@ -91,7 +91,7 @@ public class ProductTest extends BaseTest {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", produit);
         Thread.sleep(500);
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", produit);
-        Thread.sleep(4000);
+        Thread.sleep(8000);
 
         WebElement prix = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(

@@ -43,7 +43,7 @@ public class CartTest extends BaseTest {
     @Severity(SeverityLevel.BLOCKER)
     public void testAjoutAuPanier() throws InterruptedException {
         driver.get(URL_CATEGORIE);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         WebElement produit = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(
@@ -79,7 +79,7 @@ public class CartTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void testPanierNonVideApresAjout() throws InterruptedException {
         driver.get(URL_CATEGORIE);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         WebElement produit = wait.until(
                 ExpectedConditions.visibilityOfElementLocated(

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Drest_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">Drest Test Suite</span>
+              <span class="suite-name border-failed">Drest Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,115 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">21 methods,   21 passed</span>
+                    <span class="method-stats">27 methods, 1 failed,  17 skipped,  9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Drest_Test_Suite" class="hide-methods failed suite-Drest_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Drest_Test_Suite -->
+                      <a href="#" panel-name="suite-Drest_Test_Suite" class="show-methods failed suite-Drest_Test_Suite"> (show)</a> <!-- show-methods failed suite-Drest_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Drest_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.E2ETest" class="method navigator-link" hash-for-method="testParcourAchatComplet">testParcourAchatComplet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Drest_Test_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Drest_Test_Suite" class="hide-methods skipped suite-Drest_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Drest_Test_Suite -->
+                      <a href="#" panel-name="suite-Drest_Test_Suite" class="show-methods skipped suite-Drest_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Drest_Test_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Drest_Test_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="testAjoutAuPanier">testAjoutAuPanier</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testClicProduitEtTitre">testClicProduitEtTitre</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionIdentifiantsInvalides">testConnexionIdentifiantsInvalides</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionIdentifiantsValides">testConnexionIdentifiantsValides</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionMotDePasseVide">testConnexionMotDePasseVide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationEnfants">testNavigationEnfants</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationFemme">testNavigationFemme</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationHomme">testNavigationHomme</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationSport">testNavigationSport</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testPageCategorieCharge">testPageCategorieCharge</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testPageLoginCharge">testPageLoginCharge</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="testPagePanierCharge">testPagePanierCharge</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="testPanierNonVideApresAjout">testPanierNonVideApresAjout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.E2ETest" class="method navigator-link" hash-for-method="testParcourConnexionInvalide">testParcourConnexionInvalide</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.E2ETest" class="method navigator-link" hash-for-method="testParcourNavigationRecherche">testParcourNavigationRecherche</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testPrixProduitPresent">testPrixProduitPresent</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testProduitsPresents">testProduitsPresents</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Drest_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +211,12 @@
                     <div class="method-list-content passed suite-Drest_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="testAjoutAuPanier">testAjoutAuPanier</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionEmailFormatInvalide">testConnexionEmailFormatInvalide</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testClicProduitEtTitre">testClicProduitEtTitre</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionIdentifiantsInvalides">testConnexionIdentifiantsInvalides</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionIdentifiantsValides">testConnexionIdentifiantsValides</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testConnexionEmailVide">testConnexionEmailVide</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -134,56 +232,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationBeaute">testNavigationBeaute</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationEnfants">testNavigationEnfants</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationFemme">testNavigationFemme</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationHomme">testNavigationHomme</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.NavigationTest" class="method navigator-link" hash-for-method="testNavigationSport">testNavigationSport</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testPageCategorieCharge">testPageCategorieCharge</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.LoginTest" class="method navigator-link" hash-for-method="testPageLoginCharge">testPageLoginCharge</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="testPagePanierCharge">testPagePanierCharge</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.CartTest" class="method navigator-link" hash-for-method="testPanierNonVideApresAjout">testPanierNonVideApresAjout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testPrixProduitPresent">testPrixProduitPresent</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Drest_Test_Suite" title="Tests.ProductTest" class="method navigator-link" hash-for-method="testProduitsPresents">testProduitsPresents</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -218,24 +266,475 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Drest_Test_Suite" class="panel Drest_Test_Suite">
-          <div class="suite-Drest_Test_Suite-class-passed">
+          <div class="suite-Drest_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">Tests.E2ETest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParcourAchatComplet">
+                  </a> <!-- testParcourAchatComplet -->
+                  <span class="method-name">testParcourAchatComplet</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: .checkout-button, a.checkout-button, .wc-proceed-to-checkout a (tried for 40 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49684}, goog:processID: 23212, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49684/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5149013188c6f2f4396ef9adce340ab9
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Tests.E2ETest.testParcourAchatComplet(E2ETest.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Drest_Test_Suite-class-failed -->
+          <div class="suite-Drest_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.ProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testClicProduitEtTitre">
+                  </a> <!-- testClicProduitEtTitre -->
+                  <span class="method-name">testClicProduitEtTitre</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f068576dda49705f8bc230f44761b9f0, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62007}, goog:processID: 18036, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62007/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f068576dda49705f8bc230f44761b9f0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageCategorieCharge">
+                  </a> <!-- testPageCategorieCharge -->
+                  <span class="method-name">testPageCategorieCharge</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f068576dda49705f8bc230f44761b9f0, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62007}, goog:processID: 18036, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62007/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f068576dda49705f8bc230f44761b9f0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPrixProduitPresent">
+                  </a> <!-- testPrixProduitPresent -->
+                  <span class="method-name">testPrixProduitPresent</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f068576dda49705f8bc230f44761b9f0, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62007}, goog:processID: 18036, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62007/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f068576dda49705f8bc230f44761b9f0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testProduitsPresents">
+                  </a> <!-- testProduitsPresents -->
+                  <span class="method-name">testProduitsPresents</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f068576dda49705f8bc230f44761b9f0, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62007}, goog:processID: 18036, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62007/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f068576dda49705f8bc230f44761b9f0
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Drest_Test_Suite-class-skipped -->
+          <div class="suite-Drest_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.E2ETest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParcourConnexionInvalide">
+                  </a> <!-- testParcourConnexionInvalide -->
+                  <span class="method-name">testParcourConnexionInvalide</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed4fc279dd58dad7f6afb38e91284af5, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55478}, goog:processID: 8284, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55478/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed4fc279dd58dad7f6afb38e91284af5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testParcourNavigationRecherche">
+                  </a> <!-- testParcourNavigationRecherche -->
+                  <span class="method-name">testParcourNavigationRecherche</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ed4fc279dd58dad7f6afb38e91284af5, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55478}, goog:processID: 8284, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55478/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ed4fc279dd58dad7f6afb38e91284af5
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Drest_Test_Suite-class-skipped -->
+          <div class="suite-Drest_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConnexionIdentifiantsInvalides">
+                  </a> <!-- testConnexionIdentifiantsInvalides -->
+                  <span class="method-name">testConnexionIdentifiantsInvalides</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76ea4d7a6b54f4246d58f6cec9f8d5d7, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60521}, goog:processID: 15988, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60521/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76ea4d7a6b54f4246d58f6cec9f8d5d7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConnexionIdentifiantsValides">
+                  </a> <!-- testConnexionIdentifiantsValides -->
+                  <span class="method-name">testConnexionIdentifiantsValides</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76ea4d7a6b54f4246d58f6cec9f8d5d7, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60521}, goog:processID: 15988, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60521/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76ea4d7a6b54f4246d58f6cec9f8d5d7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testConnexionMotDePasseVide">
+                  </a> <!-- testConnexionMotDePasseVide -->
+                  <span class="method-name">testConnexionMotDePasseVide</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76ea4d7a6b54f4246d58f6cec9f8d5d7, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60521}, goog:processID: 15988, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60521/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76ea4d7a6b54f4246d58f6cec9f8d5d7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPageLoginCharge">
+                  </a> <!-- testPageLoginCharge -->
+                  <span class="method-name">testPageLoginCharge</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [76ea4d7a6b54f4246d58f6cec9f8d5d7, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60521}, goog:processID: 15988, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60521/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 76ea4d7a6b54f4246d58f6cec9f8d5d7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Drest_Test_Suite-class-skipped -->
+          <div class="suite-Drest_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Tests.CartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAjoutAuPanier">
+                  </a> <!-- testAjoutAuPanier -->
+                  <span class="method-name">testAjoutAuPanier</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c3af5bedcb3bfecaef56bdeef6f72a9, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57914}, goog:processID: 22808, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57914/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c3af5bedcb3bfecaef56bdeef6f72a9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPagePanierCharge">
+                  </a> <!-- testPagePanierCharge -->
+                  <span class="method-name">testPagePanierCharge</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c3af5bedcb3bfecaef56bdeef6f72a9, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57914}, goog:processID: 22808, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57914/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c3af5bedcb3bfecaef56bdeef6f72a9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testPanierNonVideApresAjout">
+                  </a> <!-- testPanierNonVideApresAjout -->
+                  <span class="method-name">testPanierNonVideApresAjout</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1c3af5bedcb3bfecaef56bdeef6f72a9, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57914}, goog:processID: 22808, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57914/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1c3af5bedcb3bfecaef56bdeef6f72a9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Drest_Test_Suite-class-skipped -->
+          <div class="suite-Drest_Test_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">Tests.NavigationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testNavigationBeaute">
-                  </a> <!-- testNavigationBeaute -->
-                  <span class="method-name">testNavigationBeaute</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testNavigationEnfants">
                   </a> <!-- testNavigationEnfants -->
                   <span class="method-name">testNavigationEnfants</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b432dde3d1b00b01ee30a3e3be5bb1f, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51048}, goog:processID: 23128, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51048/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b432dde3d1b00b01ee30a3e3be5bb1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -243,6 +742,28 @@
                   <a name="testNavigationFemme">
                   </a> <!-- testNavigationFemme -->
                   <span class="method-name">testNavigationFemme</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b432dde3d1b00b01ee30a3e3be5bb1f, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51048}, goog:processID: 23128, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51048/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b432dde3d1b00b01ee30a3e3be5bb1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -250,6 +771,28 @@
                   <a name="testNavigationHomme">
                   </a> <!-- testNavigationHomme -->
                   <span class="method-name">testNavigationHomme</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b432dde3d1b00b01ee30a3e3be5bb1f, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51048}, goog:processID: 23128, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51048/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b432dde3d1b00b01ee30a3e3be5bb1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -257,10 +800,32 @@
                   <a name="testNavigationSport">
                   </a> <!-- testNavigationSport -->
                   <span class="method-name">testNavigationSport</span>
+                  <div class="stack-trace">org.openqa.selenium.ScriptTimeoutException: script timeout
+  (Session info: chrome=148.0.7778.217)
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.19&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0b432dde3d1b00b01ee30a3e3be5bb1f, executeScript {script=return document.readyState, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\amara\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51048}, goog:processID: 23128, networkConnectionEnabled: false, pageLoadStrategy: none, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51048/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0b432dde3d1b00b01ee30a3e3be5bb1f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+	at Tests.BaseTest.lambda$setUp$0(BaseTest.java:46)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Tests.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Drest_Test_Suite-class-passed -->
+          </div> <!-- suite-Drest_Test_Suite-class-skipped -->
           <div class="suite-Drest_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -305,23 +870,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testConnexionIdentifiantsInvalides">
-                  </a> <!-- testConnexionIdentifiantsInvalides -->
-                  <span class="method-name">testConnexionIdentifiantsInvalides</span>
+                  <a name="testConnexionEmailFormatInvalide">
+                  </a> <!-- testConnexionEmailFormatInvalide -->
+                  <span class="method-name">testConnexionEmailFormatInvalide</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testConnexionIdentifiantsValides">
-                  </a> <!-- testConnexionIdentifiantsValides -->
-                  <span class="method-name">testConnexionIdentifiantsValides</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPageLoginCharge">
-                  </a> <!-- testPageLoginCharge -->
-                  <span class="method-name">testPageLoginCharge</span>
+                  <a name="testConnexionEmailVide">
+                  </a> <!-- testConnexionEmailVide -->
+                  <span class="method-name">testConnexionEmailVide</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -351,64 +909,14 @@
           <div class="suite-Drest_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Tests.CartTest</span>
+              <span class="class-name">Tests.NavigationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAjoutAuPanier">
-                  </a> <!-- testAjoutAuPanier -->
-                  <span class="method-name">testAjoutAuPanier</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPagePanierCharge">
-                  </a> <!-- testPagePanierCharge -->
-                  <span class="method-name">testPagePanierCharge</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPanierNonVideApresAjout">
-                  </a> <!-- testPanierNonVideApresAjout -->
-                  <span class="method-name">testPanierNonVideApresAjout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Drest_Test_Suite-class-passed -->
-          <div class="suite-Drest_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Tests.ProductTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testClicProduitEtTitre">
-                  </a> <!-- testClicProduitEtTitre -->
-                  <span class="method-name">testClicProduitEtTitre</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPageCategorieCharge">
-                  </a> <!-- testPageCategorieCharge -->
-                  <span class="method-name">testPageCategorieCharge</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testPrixProduitPresent">
-                  </a> <!-- testPrixProduitPresent -->
-                  <span class="method-name">testPrixProduitPresent</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProduitsPresents">
-                  </a> <!-- testProduitsPresents -->
-                  <span class="method-name">testProduitsPresents</span>
+                  <a name="testNavigationBeaute">
+                  </a> <!-- testNavigationBeaute -->
+                  <span class="method-name">testNavigationBeaute</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -431,6 +939,7 @@
       &lt;class name=&quot;Tests.ProductTest&quot;/&gt;
       &lt;class name=&quot;Tests.CartTest&quot;/&gt;
       &lt;class name=&quot;Tests.LoginTest&quot;/&gt;
+      &lt;class name=&quot;Tests.E2ETest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Tests Drest.tn --&gt;
 &lt;/suite&gt; &lt;!-- Drest Test Suite --&gt;
@@ -444,7 +953,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Tests Drest.tn (6 classes)</span>
+                <span class="test-name">Tests Drest.tn (7 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -470,96 +979,120 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(21);
+data.addRows(27);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testConnexionIdentifiantsInvalides')
-data.setCell(0, 2, 'Tests.LoginTest')
-data.setCell(0, 3, 26328);
+data.setCell(0, 1, 'testParcourAchatComplet')
+data.setCell(0, 2, 'Tests.E2ETest')
+data.setCell(0, 3, 66773);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPanierNonVideApresAjout')
-data.setCell(1, 2, 'Tests.CartTest')
-data.setCell(1, 3, 9251);
+data.setCell(1, 1, 'testRechercheValide')
+data.setCell(1, 2, 'Tests.SearchTest')
+data.setCell(1, 3, 52104);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testPageLoginCharge')
+data.setCell(2, 1, 'testConnexionEmailVide')
 data.setCell(2, 2, 'Tests.LoginTest')
-data.setCell(2, 3, 8373);
+data.setCell(2, 3, 29183);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAjoutAuPanier')
-data.setCell(3, 2, 'Tests.CartTest')
-data.setCell(3, 3, 7909);
+data.setCell(3, 1, 'testConnexionEmailFormatInvalide')
+data.setCell(3, 2, 'Tests.LoginTest')
+data.setCell(3, 3, 28162);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testConnexionIdentifiantsValides')
-data.setCell(4, 2, 'Tests.LoginTest')
-data.setCell(4, 3, 6973);
+data.setCell(4, 1, 'testRechercheVideSansResultat')
+data.setCell(4, 2, 'Tests.SearchTest')
+data.setCell(4, 3, 5313);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testClicProduitEtTitre')
-data.setCell(5, 2, 'Tests.ProductTest')
-data.setCell(5, 3, 5492);
+data.setCell(5, 1, 'testNavigationBeaute')
+data.setCell(5, 2, 'Tests.NavigationTest')
+data.setCell(5, 3, 314);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testPrixProduitPresent')
-data.setCell(6, 2, 'Tests.ProductTest')
-data.setCell(6, 3, 5323);
+data.setCell(6, 1, 'testLogoPresent')
+data.setCell(6, 2, 'Tests.HomePageTest')
+data.setCell(6, 3, 206);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testRechercheVideSansResultat')
-data.setCell(7, 2, 'Tests.SearchTest')
-data.setCell(7, 3, 5022);
+data.setCell(7, 1, 'testMenuPrincipalPresent')
+data.setCell(7, 2, 'Tests.HomePageTest')
+data.setCell(7, 3, 115);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testPagePanierCharge')
-data.setCell(8, 2, 'Tests.CartTest')
-data.setCell(8, 3, 2485);
+data.setCell(8, 1, 'testURLCorrecte')
+data.setCell(8, 2, 'Tests.HomePageTest')
+data.setCell(8, 3, 14);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testRechercheValide')
-data.setCell(9, 2, 'Tests.SearchTest')
-data.setCell(9, 3, 2109);
+data.setCell(9, 1, 'testTitrePage')
+data.setCell(9, 2, 'Tests.HomePageTest')
+data.setCell(9, 3, 14);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testProduitsPresents')
-data.setCell(10, 2, 'Tests.ProductTest')
-data.setCell(10, 3, 702);
+data.setCell(10, 1, 'testNavigationFemme')
+data.setCell(10, 2, 'Tests.NavigationTest')
+data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testNavigationEnfants')
-data.setCell(11, 2, 'Tests.NavigationTest')
-data.setCell(11, 3, 297);
+data.setCell(11, 1, 'testParcourNavigationRecherche')
+data.setCell(11, 2, 'Tests.E2ETest')
+data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testNavigationBeaute')
-data.setCell(12, 2, 'Tests.NavigationTest')
-data.setCell(12, 3, 293);
+data.setCell(12, 1, 'testPageCategorieCharge')
+data.setCell(12, 2, 'Tests.ProductTest')
+data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testNavigationFemme')
-data.setCell(13, 2, 'Tests.NavigationTest')
-data.setCell(13, 3, 278);
+data.setCell(13, 1, 'testClicProduitEtTitre')
+data.setCell(13, 2, 'Tests.ProductTest')
+data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'testNavigationHomme')
 data.setCell(14, 2, 'Tests.NavigationTest')
-data.setCell(14, 3, 256);
+data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testPageCategorieCharge')
-data.setCell(15, 2, 'Tests.ProductTest')
-data.setCell(15, 3, 239);
+data.setCell(15, 1, 'testAjoutAuPanier')
+data.setCell(15, 2, 'Tests.CartTest')
+data.setCell(15, 3, 0);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testNavigationSport')
+data.setCell(16, 1, 'testNavigationEnfants')
 data.setCell(16, 2, 'Tests.NavigationTest')
-data.setCell(16, 3, 237);
+data.setCell(16, 3, 0);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testLogoPresent')
-data.setCell(17, 2, 'Tests.HomePageTest')
-data.setCell(17, 3, 218);
+data.setCell(17, 1, 'testConnexionMotDePasseVide')
+data.setCell(17, 2, 'Tests.LoginTest')
+data.setCell(17, 3, 0);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testMenuPrincipalPresent')
-data.setCell(18, 2, 'Tests.HomePageTest')
-data.setCell(18, 3, 115);
+data.setCell(18, 1, 'testConnexionIdentifiantsValides')
+data.setCell(18, 2, 'Tests.LoginTest')
+data.setCell(18, 3, 0);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testTitrePage')
-data.setCell(19, 2, 'Tests.HomePageTest')
-data.setCell(19, 3, 24);
+data.setCell(19, 1, 'testNavigationSport')
+data.setCell(19, 2, 'Tests.NavigationTest')
+data.setCell(19, 3, 0);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testURLCorrecte')
-data.setCell(20, 2, 'Tests.HomePageTest')
-data.setCell(20, 3, 22);
+data.setCell(20, 1, 'testPrixProduitPresent')
+data.setCell(20, 2, 'Tests.ProductTest')
+data.setCell(20, 3, 0);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testProduitsPresents')
+data.setCell(21, 2, 'Tests.ProductTest')
+data.setCell(21, 3, 0);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testPagePanierCharge')
+data.setCell(22, 2, 'Tests.CartTest')
+data.setCell(22, 3, 0);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testPanierNonVideApresAjout')
+data.setCell(23, 2, 'Tests.CartTest')
+data.setCell(23, 3, 0);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testConnexionIdentifiantsInvalides')
+data.setCell(24, 2, 'Tests.LoginTest')
+data.setCell(24, 3, 0);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testPageLoginCharge')
+data.setCell(25, 2, 'Tests.LoginTest')
+data.setCell(25, 3, 0);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testParcourConnexionInvalide')
+data.setCell(26, 2, 'Tests.E2ETest')
+data.setCell(26, 3, 0);
 window.suiteTableData['Drest_Test_Suite']= { tableData: data, tableDiv: 'times-div-Drest_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Drest_Test_Suite">
               </div> <!-- times-div-Drest_Test_Suite -->
             </div> <!-- times-div -->
@@ -592,266 +1125,359 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testLogoPresent</span>
-                <span class="method-start">9493 ms</span>
+                <span class="method-start">17809 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testLogoPresent status=SUCCESS method=HomePageTest.testLogoPresent()[pri:0, instanc...)</span>
-                <span class="method-start">9751 ms</span>
+                <span class="method-start">18069 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10004 ms</span>
+                <span class="method-start">18439 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testMenuPrincipalPresent</span>
-                <span class="method-start">14158 ms</span>
+                <span class="method-start">22443 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testMenuPrincipalPresent status=SUCCESS method=HomePageTest.testMenuPrincipalPresen...)</span>
-                <span class="method-start">14284 ms</span>
+                <span class="method-start">22558 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">14480 ms</span>
+                <span class="method-start">22747 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testTitrePage</span>
-                <span class="method-start">18572 ms</span>
+                <span class="method-start">29359 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testTitrePage status=SUCCESS method=HomePageTest.testTitrePage()[pri:0, instance:Te...)</span>
-                <span class="method-start">18599 ms</span>
+                <span class="method-start">29373 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">18763 ms</span>
+                <span class="method-start">29594 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testURLCorrecte</span>
-                <span class="method-start">22173 ms</span>
+                <span class="method-start">32976 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testURLCorrecte status=SUCCESS method=HomePageTest.testURLCorrecte()[pri:0, instanc...)</span>
-                <span class="method-start">22197 ms</span>
+                <span class="method-start">32994 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.NavigationTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">22387 ms</span>
+                <span class="method-start">33205 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigationBeaute</span>
-                <span class="method-start">25848 ms</span>
+                <span class="method-start">36591 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testNavigationBeaute status=SUCCESS method=NavigationTest.testNavigationBeaute()[pr...)</span>
-                <span class="method-start">26142 ms</span>
+                <span class="method-start">36907 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">26320 ms</span>
+                <span class="method-start">37096 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigationEnfants</span>
-                <span class="method-start">29764 ms</span>
+                <span class="method-start">68203 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testNavigationEnfants status=SUCCESS method=NavigationTest.testNavigationEnfants()[...)</span>
-                <span class="method-start">30064 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68216 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30239 ms</span>
+                <span class="method-start">68221 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigationFemme</span>
-                <span class="method-start">41698 ms</span>
+                <span class="method-start">68225 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testNavigationFemme status=SUCCESS method=NavigationTest.testNavigationFemme()[pri:...)</span>
-                <span class="method-start">41979 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68238 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">42161 ms</span>
+                <span class="method-start">68242 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigationHomme</span>
-                <span class="method-start">46024 ms</span>
+                <span class="method-start">68247 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testNavigationHomme status=SUCCESS method=NavigationTest.testNavigationHomme()[pri:...)</span>
-                <span class="method-start">46281 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68254 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">46444 ms</span>
+                <span class="method-start">68273 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testNavigationSport</span>
-                <span class="method-start">49796 ms</span>
+                <span class="method-start">68278 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testNavigationSport status=SUCCESS method=NavigationTest.testNavigationSport()[pri:...)</span>
-                <span class="method-start">50037 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68287 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">50233 ms</span>
+                <span class="method-start">68292 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRechercheValide</span>
-                <span class="method-start">53591 ms</span>
+                <span class="method-start">71914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testRechercheValide status=SUCCESS method=SearchTest.testRechercheValide()[pri:0, i...)</span>
-                <span class="method-start">55710 ms</span>
+                <span class="method-start">124022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">55961 ms</span>
+                <span class="method-start">124406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testRechercheVideSansResultat</span>
-                <span class="method-start">59322 ms</span>
+                <span class="method-start">128075 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testRechercheVideSansResultat status=SUCCESS method=SearchTest.testRechercheVideSan...)</span>
-                <span class="method-start">64348 ms</span>
+                <span class="method-start">133392 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.ProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">64583 ms</span>
+                <span class="method-start">133706 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testClicProduitEtTitre</span>
-                <span class="method-start">68496 ms</span>
+                <span class="method-start">164836 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testClicProduitEtTitre status=SUCCESS method=ProductTest.testClicProduitEtTitre()[p...)</span>
-                <span class="method-start">73996 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">164848 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">74185 ms</span>
+                <span class="method-start">164855 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPageCategorieCharge</span>
-                <span class="method-start">77582 ms</span>
+                <span class="method-start">164860 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testPageCategorieCharge status=SUCCESS method=ProductTest.testPageCategorieCharge()...)</span>
-                <span class="method-start">77822 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">164868 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">78036 ms</span>
+                <span class="method-start">164874 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPrixProduitPresent</span>
-                <span class="method-start">81372 ms</span>
+                <span class="method-start">164876 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testPrixProduitPresent status=SUCCESS method=ProductTest.testPrixProduitPresent()[p...)</span>
-                <span class="method-start">86698 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">164902 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">86948 ms</span>
+                <span class="method-start">164906 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testProduitsPresents</span>
-                <span class="method-start">90506 ms</span>
+                <span class="method-start">164914 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testProduitsPresents status=SUCCESS method=ProductTest.testProduitsPresents()[pri:0...)</span>
-                <span class="method-start">91214 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">164922 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.CartTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">91415 ms</span>
+                <span class="method-start">164926 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testAjoutAuPanier</span>
-                <span class="method-start">94896 ms</span>
+                <span class="method-start">196094 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testAjoutAuPanier status=SUCCESS method=CartTest.testAjoutAuPanier()[pri:0, instanc...)</span>
-                <span class="method-start">102817 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">196105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">103032 ms</span>
+                <span class="method-start">196111 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPagePanierCharge</span>
-                <span class="method-start">107143 ms</span>
+                <span class="method-start">196114 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testPagePanierCharge status=SUCCESS method=CartTest.testPagePanierCharge()[pri:0, i...)</span>
-                <span class="method-start">109628 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">196124 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">109806 ms</span>
+                <span class="method-start">196129 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPanierNonVideApresAjout</span>
-                <span class="method-start">113770 ms</span>
+                <span class="method-start">196134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testPanierNonVideApresAjout status=SUCCESS method=CartTest.testPanierNonVideApresAj...)</span>
-                <span class="method-start">123025 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">196141 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">123315 ms</span>
+                <span class="method-start">196147 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testConnexionIdentifiantsInvalides</span>
-                <span class="method-start">127622 ms</span>
+                <span class="method-name">testConnexionEmailFormatInvalide</span>
+                <span class="method-start">200028 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testConnexionIdentifiantsInvalides status=SUCCESS method=LoginTest.testConnexionIde...)</span>
-                <span class="method-start">153952 ms</span>
+                <span class="method-name">tearDown([TestResult name=testConnexionEmailFormatInvalide status=SUCCESS method=LoginTest.testConnexionEmail...)</span>
+                <span class="method-start">228190 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">155854 ms</span>
+                <span class="method-start">228753 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testConnexionEmailVide</span>
+                <span class="method-start">232656 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testConnexionEmailVide status=SUCCESS method=LoginTest.testConnexionEmailVide()[pri...)</span>
+                <span class="method-start">261842 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">262330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293476 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testConnexionIdentifiantsInvalides</span>
+                <span class="method-start">293476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">293490 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testConnexionIdentifiantsValides</span>
-                <span class="method-start">159755 ms</span>
+                <span class="method-start">293493 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testConnexionIdentifiantsValides status=SUCCESS method=LoginTest.testConnexionIdent...)</span>
-                <span class="method-start">166728 ms</span>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293501 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">167011 ms</span>
+                <span class="method-start">293505 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testConnexionMotDePasseVide</span>
+                <span class="method-start">293508 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293514 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">293521 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testPageLoginCharge</span>
-                <span class="method-start">174694 ms</span>
+                <span class="method-start">293522 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">293531 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293531 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Tests.E2ETest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testParcourAchatComplet</span>
+                <span class="method-start">310288 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=testPageLoginCharge status=SUCCESS method=LoginTest.testPageLoginCharge()[pri:0, in...)</span>
-                <span class="method-start">183069 ms</span>
+                <span class="method-name">tearDown([TestResult name=testParcourAchatComplet status=FAILURE method=E2ETest.testParcourAchatComplet()[pri...)</span>
+                <span class="method-start">377065 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
+                <span class="method-start">377823 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testParcourConnexionInvalide</span>
+                <span class="method-start">409182 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">409184 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">409191 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testParcourNavigationRecherche</span>
+                <span class="method-start">409195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">409204 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
