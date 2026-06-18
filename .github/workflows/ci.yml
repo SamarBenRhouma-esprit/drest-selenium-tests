@@ -5,6 +5,11 @@ on:
     - cron: '0 2 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -30,11 +35,12 @@ jobs:
         run: mvn allure:report
         continue-on-error: true
 
-      - name: Upload Allure Report
-        uses: actions/upload-artifact@v4
+      - name: Deploy Allure Report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          name: allure-report
-          path: target/allure-report/
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: target/allure-report
+          publish_branch: gh-pages
 
       - name: Send Email with Resend
         run: |
@@ -45,5 +51,5 @@ jobs:
               "from": "onboarding@resend.dev",
               "to": ["samar.benrhouma@esprit.tn"],
               "subject": "Rapport Tests Drest.tn - Run ${{ github.run_number }}",
-              "html": "<h2>Tests Automatises Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><a href=\"https://github.com/SamarBenRhouma-esprit/drest-selenium-tests/actions/runs/${{ github.run_id }}\">Voir le rapport complet</a></p>"
+              "html": "<h2>Tests Automatises Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><strong><a href=\"https://SamarBenRhouma-esprit.github.io/drest-selenium-tests/\">Cliquer ici pour voir le rapport Allure</a></strong></p><p>Run: ${{ github.run_number }} | Date: ${{ github.event.head_commit.timestamp }}</p>"
             }'
