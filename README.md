@@ -43,8 +43,7 @@ Depuis IntelliJ IDEA, panneau Maven :
 ## Rapport Allure
 
 Le rapport est disponible en ligne :
-👉 https://samarbenrhouma-esprit.github.io/drest-selenium-tests/target/site/allure-maven-plugin/
-
+👉 https://samarbenrhouma-esprit.github.io/drest-selenium-tests/
 ## CI/CD
 
 Les tests se lancent automatiquement chaque nuit à 2h00 via GitHub Actions.
