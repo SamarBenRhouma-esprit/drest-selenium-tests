@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Drest Test Suite" verbose="1">
+
+    <test name="Tests Drest.tn">
+        <classes>
+            <class name="Tests.HomePageTest"/>
+            <class name="Tests.NavigationTest"/>
+            <class name="Tests.SearchTest"/>
+            <class name="Tests.ProductTest"/>
+            <class name="Tests.CartTest"/>
+            <class name="Tests.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
