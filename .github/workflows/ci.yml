@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
   test:
@@ -24,8 +22,12 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@v1
+      - name: Install Chrome
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
 
       - name: Run Selenium Tests
         run: mvn clean test -Dheadless=true
@@ -51,5 +53,5 @@ jobs:
               "from": "onboarding@resend.dev",
               "to": ["samar.benrhouma@esprit.tn"],
               "subject": "Rapport Tests Drest.tn - Run ${{ github.run_number }}",
-              "html": "<h2>Tests Automatises Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><strong><a href=\"https://SamarBenRhouma-esprit.github.io/drest-selenium-tests/\">Cliquer ici pour voir le rapport Allure</a></strong></p><p>Run: ${{ github.run_number }} | Date: ${{ github.event.head_commit.timestamp }}</p>"
+              "html": "<h2>Tests Automatises Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><strong><a href=\"https://samarbenrhouma-esprit.github.io/drest-selenium-tests/\">Cliquer ici pour voir le rapport Allure</a></strong></p>"
             }'
