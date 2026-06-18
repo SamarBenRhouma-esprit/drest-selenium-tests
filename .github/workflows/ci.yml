@@ -36,23 +36,14 @@ jobs:
           name: allure-report
           path: target/allure-report/
 
-      - name: Send Email Report
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: "Rapport Tests Drest.tn - Run ${{ github.run_number }}"
-          to: benrhouma.samar44@gmail.com
-          from: benrhouma.samar44@gmail.com
-          body: |
-            Bonjour Samar,
-
-            Les tests automatisés Drest.tn viennent de se terminer.
-
-            Voir le rapport complet ici :
-            https://github.com/SamarBenRhouma-esprit/drest-selenium-tests/actions/runs/${{ github.run_id }}
-
-            Cordialement,
-            GitHub Actionsgit add .
+      - name: Send Email with Resend
+        run: |
+          curl -X POST 'https://api.resend.com/emails' \
+            -H 'Authorization: Bearer ${{ secrets.RESEND_API_KEY }}' \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "from": "onboarding@resend.dev",
+              "to": ["benrhouma.samar44@gmail.com"],
+              "subject": "Rapport Tests Drest.tn - Run ${{ github.run_number }}",
+              "html": "<h2>Tests Automatisés Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><a href=\"https://github.com/SamarBenRhouma-esprit/drest-selenium-tests/actions/runs/${{ github.run_id }}\">Voir le rapport complet</a></p>"
+            }'
