@@ -43,7 +43,7 @@ jobs:
             -H 'Content-Type: application/json' \
             -d '{
               "from": "onboarding@resend.dev",
-              "to": ["benrhouma.samar44@gmail.com"],
+              "to": ["samar.benrhouma@esprit.tn"],
               "subject": "Rapport Tests Drest.tn - Run ${{ github.run_number }}",
-              "html": "<h2>Tests Automatisés Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><a href=\"https://github.com/SamarBenRhouma-esprit/drest-selenium-tests/actions/runs/${{ github.run_id }}\">Voir le rapport complet</a></p>"
+              "html": "<h2>Tests Automatises Drest.tn</h2><p>Les tests viennent de se terminer.</p><p><a href=\"https://github.com/SamarBenRhouma-esprit/drest-selenium-tests/actions/runs/${{ github.run_id }}\">Voir le rapport complet</a></p>"
             }'
