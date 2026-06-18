@@ -9,7 +9,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -28,6 +27,14 @@ public class BaseTest {
         options.addArguments("--disable-popup-blocking");
         options.setPageLoadStrategy(PageLoadStrategy.NONE);
 
+        // Mode headless pour CI/CD GitHub Actions
+        if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
+            options.addArguments("--headless=new");
+            options.addArguments("--no-sandbox");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");
+        }
+
         driver = new ChromeDriver(options);
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
@@ -44,7 +51,6 @@ public class BaseTest {
 
     @AfterMethod
     public void tearDown(ITestResult result) {
-        // Capture d'ecran automatique si le test echoue
         if (result.getStatus() == ITestResult.FAILURE) {
             capturerEcran("Echec - " + result.getName());
         }

@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="21" passed="21" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-11T12:25:06 CEST" name="Drest Test Suite" finished-at="2026-06-11T12:28:09 CEST" duration-ms="183388">
+    <groups>
+    </groups>
+    <test started-at="2026-06-11T12:25:06 CEST" name="Tests Drest.tn" finished-at="2026-06-11T12:28:09 CEST" duration-ms="183388">
+      <class name="Tests.CartTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:37 CEST" name="setUp" finished-at="2026-06-11T12:26:41 CEST" duration-ms="3475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAjoutAuPanier()[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:41 CEST" name="testAjoutAuPanier" finished-at="2026-06-11T12:26:49 CEST" duration-ms="7909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAjoutAuPanier -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:49 CEST" name="tearDown" finished-at="2026-06-11T12:26:49 CEST" duration-ms="213" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAjoutAuPanier status=SUCCESS method=CartTest.testAjoutAuPanier()[pri:0, instance:Tests.CartTest@5bdd5689] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:49 CEST" name="setUp" finished-at="2026-06-11T12:26:53 CEST" duration-ms="4109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPagePanierCharge()[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:53 CEST" name="testPagePanierCharge" finished-at="2026-06-11T12:26:55 CEST" duration-ms="2485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPagePanierCharge -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:55 CEST" name="tearDown" finished-at="2026-06-11T12:26:56 CEST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPagePanierCharge status=SUCCESS method=CartTest.testPagePanierCharge()[pri:0, instance:Tests.CartTest@5bdd5689] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:26:56 CEST" name="setUp" finished-at="2026-06-11T12:27:00 CEST" duration-ms="3964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPanierNonVideApresAjout()[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:27:00 CEST" name="testPanierNonVideApresAjout" finished-at="2026-06-11T12:27:09 CEST" duration-ms="9251" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPanierNonVideApresAjout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.CartTest@5bdd5689]" started-at="2026-06-11T12:27:09 CEST" name="tearDown" finished-at="2026-06-11T12:27:09 CEST" duration-ms="288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPanierNonVideApresAjout status=SUCCESS method=CartTest.testPanierNonVideApresAjout()[pri:0, instance:Tests.CartTest@5bdd5689] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.CartTest -->
+      <class name="Tests.NavigationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:28 CEST" name="setUp" finished-at="2026-06-11T12:25:32 CEST" duration-ms="3458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationBeaute()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:32 CEST" name="testNavigationBeaute" finished-at="2026-06-11T12:25:32 CEST" duration-ms="293" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationBeaute -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:32 CEST" name="tearDown" finished-at="2026-06-11T12:25:32 CEST" duration-ms="175" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNavigationBeaute status=SUCCESS method=NavigationTest.testNavigationBeaute()[pri:0, instance:Tests.NavigationTest@3b08f438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:32 CEST" name="setUp" finished-at="2026-06-11T12:25:36 CEST" duration-ms="3439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationEnfants()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:36 CEST" name="testNavigationEnfants" finished-at="2026-06-11T12:25:36 CEST" duration-ms="297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationEnfants -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:36 CEST" name="tearDown" finished-at="2026-06-11T12:25:36 CEST" duration-ms="173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNavigationEnfants status=SUCCESS method=NavigationTest.testNavigationEnfants()[pri:0, instance:Tests.NavigationTest@3b08f438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:36 CEST" name="setUp" finished-at="2026-06-11T12:25:48 CEST" duration-ms="11457" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationFemme()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:48 CEST" name="testNavigationFemme" finished-at="2026-06-11T12:25:48 CEST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationFemme -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:48 CEST" name="tearDown" finished-at="2026-06-11T12:25:48 CEST" duration-ms="180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNavigationFemme status=SUCCESS method=NavigationTest.testNavigationFemme()[pri:0, instance:Tests.NavigationTest@3b08f438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:48 CEST" name="setUp" finished-at="2026-06-11T12:25:52 CEST" duration-ms="3861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationHomme()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:52 CEST" name="testNavigationHomme" finished-at="2026-06-11T12:25:52 CEST" duration-ms="256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationHomme -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:52 CEST" name="tearDown" finished-at="2026-06-11T12:25:52 CEST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNavigationHomme status=SUCCESS method=NavigationTest.testNavigationHomme()[pri:0, instance:Tests.NavigationTest@3b08f438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:52 CEST" name="setUp" finished-at="2026-06-11T12:25:56 CEST" duration-ms="3349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNavigationSport()[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:56 CEST" name="testNavigationSport" finished-at="2026-06-11T12:25:56 CEST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigationSport -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.NavigationTest@3b08f438]" started-at="2026-06-11T12:25:56 CEST" name="tearDown" finished-at="2026-06-11T12:25:56 CEST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNavigationSport status=SUCCESS method=NavigationTest.testNavigationSport()[pri:0, instance:Tests.NavigationTest@3b08f438] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.NavigationTest -->
+      <class name="Tests.ProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:10 CEST" name="setUp" finished-at="2026-06-11T12:26:14 CEST" duration-ms="3912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testClicProduitEtTitre()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:14 CEST" name="testClicProduitEtTitre" finished-at="2026-06-11T12:26:20 CEST" duration-ms="5492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClicProduitEtTitre -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:20 CEST" name="tearDown" finished-at="2026-06-11T12:26:20 CEST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testClicProduitEtTitre status=SUCCESS method=ProductTest.testClicProduitEtTitre()[pri:0, instance:Tests.ProductTest@5b2f8ab6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:20 CEST" name="setUp" finished-at="2026-06-11T12:26:23 CEST" duration-ms="3394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageCategorieCharge()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:23 CEST" name="testPageCategorieCharge" finished-at="2026-06-11T12:26:24 CEST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageCategorieCharge -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:24 CEST" name="tearDown" finished-at="2026-06-11T12:26:24 CEST" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPageCategorieCharge status=SUCCESS method=ProductTest.testPageCategorieCharge()[pri:0, instance:Tests.ProductTest@5b2f8ab6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:24 CEST" name="setUp" finished-at="2026-06-11T12:26:27 CEST" duration-ms="3336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPrixProduitPresent()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:27 CEST" name="testPrixProduitPresent" finished-at="2026-06-11T12:26:33 CEST" duration-ms="5323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrixProduitPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:33 CEST" name="tearDown" finished-at="2026-06-11T12:26:33 CEST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPrixProduitPresent status=SUCCESS method=ProductTest.testPrixProduitPresent()[pri:0, instance:Tests.ProductTest@5b2f8ab6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:33 CEST" name="setUp" finished-at="2026-06-11T12:26:36 CEST" duration-ms="3558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testProduitsPresents()[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:36 CEST" name="testProduitsPresents" finished-at="2026-06-11T12:26:37 CEST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProduitsPresents -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.ProductTest@5b2f8ab6]" started-at="2026-06-11T12:26:37 CEST" name="tearDown" finished-at="2026-06-11T12:26:37 CEST" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testProduitsPresents status=SUCCESS method=ProductTest.testProduitsPresents()[pri:0, instance:Tests.ProductTest@5b2f8ab6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.ProductTest -->
+      <class name="Tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:06 CEST" name="setUp" finished-at="2026-06-11T12:25:15 CEST" duration-ms="9113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogoPresent()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:15 CEST" name="testLogoPresent" finished-at="2026-06-11T12:25:16 CEST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogoPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:16 CEST" name="tearDown" finished-at="2026-06-11T12:25:16 CEST" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogoPresent status=SUCCESS method=HomePageTest.testLogoPresent()[pri:0, instance:Tests.HomePageTest@5bcde458] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:16 CEST" name="setUp" finished-at="2026-06-11T12:25:20 CEST" duration-ms="4154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMenuPrincipalPresent()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:20 CEST" name="testMenuPrincipalPresent" finished-at="2026-06-11T12:25:20 CEST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMenuPrincipalPresent -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:20 CEST" name="tearDown" finished-at="2026-06-11T12:25:20 CEST" duration-ms="193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMenuPrincipalPresent status=SUCCESS method=HomePageTest.testMenuPrincipalPresent()[pri:0, instance:Tests.HomePageTest@5bcde458] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:20 CEST" name="setUp" finished-at="2026-06-11T12:25:24 CEST" duration-ms="4092" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTitrePage()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:24 CEST" name="testTitrePage" finished-at="2026-06-11T12:25:24 CEST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitrePage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:24 CEST" name="tearDown" finished-at="2026-06-11T12:25:25 CEST" duration-ms="160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testTitrePage status=SUCCESS method=HomePageTest.testTitrePage()[pri:0, instance:Tests.HomePageTest@5bcde458] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:25 CEST" name="setUp" finished-at="2026-06-11T12:25:28 CEST" duration-ms="3410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testURLCorrecte()[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:28 CEST" name="testURLCorrecte" finished-at="2026-06-11T12:25:28 CEST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testURLCorrecte -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.HomePageTest@5bcde458]" started-at="2026-06-11T12:25:28 CEST" name="tearDown" finished-at="2026-06-11T12:25:28 CEST" duration-ms="187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testURLCorrecte status=SUCCESS method=HomePageTest.testURLCorrecte()[pri:0, instance:Tests.HomePageTest@5bcde458] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.HomePageTest -->
+      <class name="Tests.SearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.SearchTest@2bac9ba]" started-at="2026-06-11T12:25:56 CEST" name="setUp" finished-at="2026-06-11T12:25:59 CEST" duration-ms="3355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRechercheValide()[pri:0, instance:Tests.SearchTest@2bac9ba]" started-at="2026-06-11T12:25:59 CEST" name="testRechercheValide" finished-at="2026-06-11T12:26:02 CEST" duration-ms="2109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRechercheValide -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.SearchTest@2bac9ba]" started-at="2026-06-11T12:26:02 CEST" name="tearDown" finished-at="2026-06-11T12:26:02 CEST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRechercheValide status=SUCCESS method=SearchTest.testRechercheValide()[pri:0, instance:Tests.SearchTest@2bac9ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.SearchTest@2bac9ba]" started-at="2026-06-11T12:26:02 CEST" name="setUp" finished-at="2026-06-11T12:26:05 CEST" duration-ms="3361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRechercheVideSansResultat()[pri:0, instance:Tests.SearchTest@2bac9ba]" started-at="2026-06-11T12:26:05 CEST" name="testRechercheVideSansResultat" finished-at="2026-06-11T12:26:10 CEST" duration-ms="5022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRechercheVideSansResultat -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.SearchTest@2bac9ba]" started-at="2026-06-11T12:26:10 CEST" name="tearDown" finished-at="2026-06-11T12:26:10 CEST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRechercheVideSansResultat status=SUCCESS method=SearchTest.testRechercheVideSansResultat()[pri:0, instance:Tests.SearchTest@2bac9ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.SearchTest -->
+      <class name="Tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:09 CEST" name="setUp" finished-at="2026-06-11T12:27:13 CEST" duration-ms="4305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConnexionIdentifiantsInvalides()[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:13 CEST" name="testConnexionIdentifiantsInvalides" finished-at="2026-06-11T12:27:40 CEST" duration-ms="26328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConnexionIdentifiantsInvalides -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:40 CEST" name="tearDown" finished-at="2026-06-11T12:27:42 CEST" duration-ms="1900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testConnexionIdentifiantsInvalides status=SUCCESS method=LoginTest.testConnexionIdentifiantsInvalides()[pri:0, instance:Tests.LoginTest@2788d0fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:42 CEST" name="setUp" finished-at="2026-06-11T12:27:46 CEST" duration-ms="3901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConnexionIdentifiantsValides()[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:46 CEST" name="testConnexionIdentifiantsValides" finished-at="2026-06-11T12:27:53 CEST" duration-ms="6973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConnexionIdentifiantsValides -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:53 CEST" name="tearDown" finished-at="2026-06-11T12:27:53 CEST" duration-ms="281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testConnexionIdentifiantsValides status=SUCCESS method=LoginTest.testConnexionIdentifiantsValides()[pri:0, instance:Tests.LoginTest@2788d0fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:27:53 CEST" name="setUp" finished-at="2026-06-11T12:28:01 CEST" duration-ms="7680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testPageLoginCharge()[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:28:01 CEST" name="testPageLoginCharge" finished-at="2026-06-11T12:28:09 CEST" duration-ms="8373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPageLoginCharge -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:Tests.LoginTest@2788d0fe]" started-at="2026-06-11T12:28:09 CEST" name="tearDown" finished-at="2026-06-11T12:28:09 CEST" duration-ms="249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testPageLoginCharge status=SUCCESS method=LoginTest.testPageLoginCharge()[pri:0, instance:Tests.LoginTest@2788d0fe] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.LoginTest -->
+    </test> <!-- Tests Drest.tn -->
+  </suite> <!-- Drest Test Suite -->
+</testng-results>
