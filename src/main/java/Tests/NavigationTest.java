@@ -5,6 +5,7 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Step;
 import io.qameta.allure.Story;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -18,21 +19,35 @@ import java.time.Duration;
 @Feature("Navigation")
 public class NavigationTest extends BaseTest {
 
+    // ==================== STEPS ====================
+
+    @Step("Cliquer sur le menu : {selector}")
+    private void clicMenu(String selector) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebElement menu = wait.until(
+                ExpectedConditions.elementToBeClickable(
+                        By.cssSelector(selector)
+                )
+        );
+        menu.click();
+    }
+
+    @Step("Vérifier que l'URL contient : {motCle}")
+    private void verifierURL(String motCle) {
+        String url = driver.getCurrentUrl();
+        Assert.assertNotNull(url, "URL null");
+        Assert.assertTrue(url.contains(motCle), "URL incorrecte : " + url);
+    }
+
+    // ==================== TESTS ====================
+
     @Test
     @Story("Navigation vers la section Femme")
     @Description("Vérifie que le clic sur le menu Femme redirige vers la page femme")
     @Severity(SeverityLevel.CRITICAL)
     public void testNavigationFemme() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement menuFemme = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.cssSelector("a.menu-item[href*='femme']")
-                )
-        );
-        menuFemme.click();
-        String url = driver.getCurrentUrl();
-        Assert.assertNotNull(url, "URL null");
-        Assert.assertTrue(url.contains("femme"), "URL incorrecte : " + url);
+        clicMenu("a.menu-item[href*='femme']");
+        verifierURL("femme");
     }
 
     @Test
@@ -40,16 +55,8 @@ public class NavigationTest extends BaseTest {
     @Description("Vérifie que le clic sur le menu Homme redirige vers la page homme")
     @Severity(SeverityLevel.CRITICAL)
     public void testNavigationHomme() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement menuHomme = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.cssSelector("a.menu-item[href*='homme']")
-                )
-        );
-        menuHomme.click();
-        String url = driver.getCurrentUrl();
-        Assert.assertNotNull(url, "URL null");
-        Assert.assertTrue(url.contains("homme"), "URL incorrecte : " + url);
+        clicMenu("a.menu-item[href*='homme']");
+        verifierURL("homme");
     }
 
     @Test
@@ -57,16 +64,8 @@ public class NavigationTest extends BaseTest {
     @Description("Vérifie que le clic sur le menu Enfants redirige vers la page enfants")
     @Severity(SeverityLevel.CRITICAL)
     public void testNavigationEnfants() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement menuEnfants = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.cssSelector("a.menu-item[href*='enfants']")
-                )
-        );
-        menuEnfants.click();
-        String url = driver.getCurrentUrl();
-        Assert.assertNotNull(url, "URL null");
-        Assert.assertTrue(url.contains("enfants"), "URL incorrecte : " + url);
+        clicMenu("a.menu-item[href*='enfants']");
+        verifierURL("enfants");
     }
 
     @Test
@@ -74,16 +73,8 @@ public class NavigationTest extends BaseTest {
     @Description("Vérifie que le clic sur le menu Beauté redirige vers la page beauté")
     @Severity(SeverityLevel.NORMAL)
     public void testNavigationBeaute() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement menuBeaute = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.cssSelector("a.menu-item[href*='beaute']")
-                )
-        );
-        menuBeaute.click();
-        String url = driver.getCurrentUrl();
-        Assert.assertNotNull(url, "URL null");
-        Assert.assertTrue(url.contains("beaute"), "URL incorrecte : " + url);
+        clicMenu("a.menu-item[href*='beaute']");
+        verifierURL("beaute");
     }
 
     @Test
@@ -91,15 +82,7 @@ public class NavigationTest extends BaseTest {
     @Description("Vérifie que le clic sur le menu Sport redirige vers la page sport")
     @Severity(SeverityLevel.NORMAL)
     public void testNavigationSport() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement menuSport = wait.until(
-                ExpectedConditions.elementToBeClickable(
-                        By.cssSelector("a.menu-item[href*='sport']")
-                )
-        );
-        menuSport.click();
-        String url = driver.getCurrentUrl();
-        Assert.assertNotNull(url, "URL null");
-        Assert.assertTrue(url.contains("sport"), "URL incorrecte : " + url);
+        clicMenu("a.menu-item[href*='sport']");
+        verifierURL("sport");
     }
 }
