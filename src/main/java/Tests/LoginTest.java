@@ -117,7 +117,7 @@ public class LoginTest extends BaseTest {
         verifierConnexionReussie();
     }
 
-    // ==================== CAS KO ====================
+    // ==================== CAS KO ===================
 
     @Test
     @Story("Connexion avec identifiants invalides")
