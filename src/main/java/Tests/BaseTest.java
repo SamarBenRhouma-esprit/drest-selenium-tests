@@ -12,7 +12,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BaseTest {
 
@@ -25,10 +29,22 @@ public class BaseTest {
         for (int attempt = 1; attempt <= maxAttempts; attempt++) {
             try {
                 ChromeOptions options = new ChromeOptions();
+
+                // === Anti-détection reCAPTCHA / bot detection ===
+                options.setExperimentalOption("excludeSwitches", Arrays.asList("enable-automation"));
+                options.setExperimentalOption("useAutomationExtension", false);
+                options.addArguments("--disable-blink-features=AutomationControlled");
+                options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) " +
+                        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36");
+
+                // === Options standard ===
                 options.addArguments("--start-maximized");
                 options.addArguments("--disable-notifications");
+                options.addArguments("--disable-infobars");
+                options.addArguments("--disable-popup-blocking");
                 options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
 
+                // === Mode headless (optionnel via -Dheadless=true) ===
                 boolean headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
                 if (headless) {
                     options.addArguments("--headless=new");
@@ -42,6 +58,17 @@ public class BaseTest {
                 driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(120));
                 driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(60));
 
+                // === Masquer navigator.webdriver SUR CHAQUE nouvelle page (CDP) ===
+                // Injection avant tout script de la page → reCAPTCHA voit un navigateur "propre"
+                Map<String, Object> params = new HashMap<>();
+                params.put("source",
+                        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});" +
+                                "window.chrome = { runtime: {} };" +
+                                "Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3, 4, 5]});" +
+                                "Object.defineProperty(navigator, 'languages', {get: () => ['fr-FR', 'fr', 'en-US', 'en']});"
+                );
+                ((ChromeDriver) driver).executeCdpCommand("Page.addScriptToEvaluateOnNewDocument", params);
+
                 Thread.sleep(2000);
                 driver.get("https://www.drest.tn");
 
@@ -51,10 +78,10 @@ public class BaseTest {
                 ));
                 Thread.sleep(3000);
 
-                return; // Succès, on sort
+                return; // Setup réussi, on sort
 
             } catch (Exception e) {
-                System.out.println("SetUp attempt " + attempt + " failed: " + e.getMessage());
+                System.out.println("SetUp attempt " + attempt + "/" + maxAttempts + " failed: " + e.getMessage());
 
                 if (driver != null) {
                     try {
@@ -75,9 +102,13 @@ public class BaseTest {
             }
         }
 
-        // Si on arrive ici, les 3 tentatives ont échoué
-        // On ne lance PAS d'exception pour éviter le "broken" dans Allure
-        System.out.println("SetUp failed after 3 attempts, test will proceed but likely fail");
+        // Si 3 tentatives échouent, on throw une exception CLAIRE
+        // → statut "broken" (jaune) dans Allure avec un message explicite
+        // → PAS de NullPointerException dans le corps du test
+        throw new RuntimeException(
+                "Impossible d'initialiser le driver après " + maxAttempts + " tentatives. " +
+                        "Cause probable : CAPTCHA, réseau, ou site indisponible."
+        );
     }
 
     @AfterMethod

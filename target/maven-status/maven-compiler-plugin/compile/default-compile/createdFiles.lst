@@ -1,0 +1,9 @@
+org\example\Main.class
+Tests\HomePageTest.class
+Tests\E2ETest.class
+Tests\ProductTest.class
+Tests\SearchTest.class
+Tests\NavigationTest.class
+Tests\CartTest.class
+Tests\LoginTest.class
+Tests\BaseTest.class
