@@ -54,15 +54,20 @@ public class CartTest extends BaseTest {
                         By.cssSelector("li.product a.woocommerce-loop-product__link")
                 )
         );
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", produit);
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center'});",
+                produit
+        );
         Thread.sleep(500);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", produit);
+        produit.click();
         Thread.sleep(3000);
     }
 
     @Step("Cliquer sur le bouton Ajouter au panier")
     private void clicBoutonAjouterAuPanier() throws InterruptedException {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        // 1. Attend que le bouton soit cliquable
         WebElement boutonAjout = wait.until(
                 ExpectedConditions.elementToBeClickable(
                         By.cssSelector("button.single_add_to_cart_button, " +
@@ -70,8 +75,33 @@ public class CartTest extends BaseTest {
                                 "button[name='add-to-cart']")
                 )
         );
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", boutonAjout);
-        Thread.sleep(2000);
+
+        // 2. Scroll pour être sûre qu'il est visible
+        ((JavascriptExecutor) driver).executeScript(
+                "arguments[0].scrollIntoView({block: 'center'});",
+                boutonAjout
+        );
+        Thread.sleep(500);
+
+        // 3. Clic natif Selenium (ne bloque pas la connexion CDP comme executeScript)
+        try {
+            boutonAjout.click();
+        } catch (Exception e) {
+            // Fallback : si le clic natif échoue (élément intercepté), tente le JS click
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", boutonAjout);
+        }
+
+        // 4. Attend la confirmation d'ajout (message WooCommerce ou mise à jour du panier mini)
+        WebDriverWait waitConfirm = new WebDriverWait(driver, Duration.ofSeconds(20));
+        waitConfirm.until(ExpectedConditions.or(
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".woocommerce-message")),
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".added_to_cart")),
+                ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".wc-forward")),
+                ExpectedConditions.textToBePresentInElementLocated(
+                        By.tagName("body"),
+                        "ajouté à votre panier"
+                )
+        ));
     }
 
     @Step("Vérifier que le produit a été ajouté au panier")
