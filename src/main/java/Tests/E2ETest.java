@@ -268,7 +268,7 @@ public class E2ETest extends BaseTest {
     @Severity(SeverityLevel.NORMAL)
     public void testParcourNavigationRecherche() throws InterruptedException {
         naviguerViaMenu();
-        rechercherProduit("robe");
+        rechercherProduit("Chemise");
         verifierFicheProduit();
     }
 }

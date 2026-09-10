@@ -3,36 +3,20 @@
 <suite name="Failed suite [Drest Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <test thread-count="5" name="Tests Drest.tn(failed)" verbose="0">
     <classes>
-      <class name="Tests.SearchTest">
+      <class name="Tests.NavigationTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testRechercheVideSansResultat"/>
+          <include name="testNavigationSport"/>
         </methods>
-      </class> <!-- Tests.SearchTest -->
+      </class> <!-- Tests.NavigationTest -->
       <class name="Tests.CartTest">
         <methods>
+          <include name="testPagePanierCharge"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="testPanierNonVideApresAjout"/>
-          <include name="testAjoutAuPanier"/>
         </methods>
       </class> <!-- Tests.CartTest -->
-      <class name="Tests.E2ETest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testParcourConnexionInvalide"/>
-          <include name="testParcourAchatComplet"/>
-        </methods>
-      </class> <!-- Tests.E2ETest -->
-      <class name="Tests.LoginTest">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testPageLoginCharge"/>
-        </methods>
-      </class> <!-- Tests.LoginTest -->
     </classes>
   </test> <!-- Tests Drest.tn(failed) -->
 </suite> <!-- Failed suite [Drest Test Suite] -->
